@@ -1,18 +1,19 @@
-import React from 'react'
+import React from "react";
+import { Unity, useUnityContext } from "react-unity-webgl";
 
 const Simulate = () => {
-  return (
-    <div className=''>
-      <div className='h-full flex flex-col justify-between'>
-        <div>Find Datasets</div>
-        <div>Create New Project</div>
-      </div>
-      <div className='h-full bg-trans'>
-        <div>Search</div>
-        
-      </div>
-    </div>
-  )
-}
+  const { unityProvider } = useUnityContext({
+    loaderUrl: "../../../public/Build/spcaeApp.loader.js",
+    dataUrl: "../../../public/Build/spcaeApp.data.unityweb",
+    frameworkUrl: "../../../public/Build/spcaeApp.framework.js.unityweb",
+    codeUrl: "../../../public/Build/spcaeApp.wasm.unityweb",
+  });
 
-export default Simulate
+  return (
+    <div className="bg-red-300">
+      <Unity unityProvider={unityProvider} />
+    </div>
+  );
+};
+
+export default Simulate;
