@@ -12,7 +12,7 @@ module.exports = {
         'galaxy': "url('./src/assets/galaxy.jpg)",
       },
       colors: {
-        'trans': '#ffffff40',
+        'trans': '#ffffff52',
         'pink': 'rgba(255, 183, 195, 0.618)',
         'yell': 'rgba(255, 255, 0, 0.523)',
         'bluebg': 'rgba(195, 222, 255, 0.379)',

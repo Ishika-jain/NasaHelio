@@ -3,7 +3,7 @@ import React from 'react';
 const Leaderboard = () => {
   return (
     <div className="bg-bluebg rounded-lg shadow-lg px-4 h-full text-bluetxt">
-      <div className='flex justify-center font-bold text-3xl p-2 '> Leaderboard </div>
+      <div className='flex justify-center font-bold text-2xl p-2 '> Leaderboard </div>
       <table className="w-full border-collapse">
         <thead>
           <tr>
@@ -12,9 +12,9 @@ const Leaderboard = () => {
             <th className="py-2 text-left">Score</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='w-full'>
           
-          <tr>
+          <tr className='flex w-full justify-evenly'>
             <td className="border-t border-gray-300 py-2">1</td>
             <td className="border-t border-gray-300 py-2">User 1</td>
             <td className="border-t border-gray-300 py-2">900</td>

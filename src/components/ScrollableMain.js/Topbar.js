@@ -73,8 +73,8 @@ const TopBar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between h-32 ">
-      <div className="flex space-x-2 w-full  justify-between">
+    <div className="flex items-center justify-between h-32 overflow-x-hidden">
+      <div className="flex space-x-2 w-full justify-between">
         {storiesData.map((story) => (
           <div
             key={story.id}
@@ -144,3 +144,5 @@ const TopBar = () => {
 };
 
 export default TopBar;
+
+
