@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";

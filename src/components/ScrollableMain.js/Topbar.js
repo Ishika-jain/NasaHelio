@@ -1,59 +1,8 @@
 import React, { useState } from "react";
 import Modal from "@mui/material/Modal";
+import ControlPointIcon from "@mui/icons-material/ControlPoint";
+import { storiesData } from "./Data";
 
-const storiesData = [
-  {
-    id: 1,
-    username: "user1",
-    imageUrl: "https://via.placeholder.com/40",
-  },
-  {
-    id: 2,
-    username: "user2",
-    imageUrl: "https://via.placeholder.com/40",
-  },
-  {
-    id: 3,
-    username: "user3",
-    imageUrl: "https://via.placeholder.com/40",
-  },
-  {
-    id: 4,
-    username: "user4",
-    imageUrl: "https://via.placeholder.com/40",
-  },
-  {
-    id: 5,
-    username: "user5",
-    imageUrl: "https://via.placeholder.com/40",
-  },
-  {
-    id: 1,
-    username: "user1",
-    imageUrl: "https://via.placeholder.com/40",
-  },
-  {
-    id: 4,
-    username: "user4",
-    imageUrl: "https://via.placeholder.com/40",
-  },
-  {
-    id: 5,
-    username: "user5",
-    imageUrl: "https://via.placeholder.com/40",
-  },
-  {
-    id: 1,
-    username: "user1",
-    imageUrl: "https://via.placeholder.com/40",
-  },
-  {
-    id: 1,
-    username: "user1",
-    imageUrl: "https://via.placeholder.com/40",
-  },
-  
-];
 
 const TopBar = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -62,9 +11,11 @@ const TopBar = () => {
   const handleStoryClick = (story) => {
     setSelectedStory(story);
     setOpenModal(true);
-    // setTimeout(() => {
-    //   handleCloseModal();
-    // }, 3000);
+  };
+
+  const handleVr = () => {
+    setSelectedStory(1);
+    setOpenModal(true);
   };
 
   const handleCloseModal = () => {
@@ -74,6 +25,14 @@ const TopBar = () => {
 
   return (
     <div className="flex items-center justify-between h-32 overflow-x-hidden">
+      <div
+        key={1}
+        className="h-16 w-16 rounded-full cursor-pointer text-center mx-4 mt-1 "
+        onClick={() => handleVr()}
+      >
+        <ControlPointIcon sx={{ width: "60px", height: "60px" }} />
+      </div>
+
       <div className="flex space-x-2 w-full justify-between">
         {storiesData.map((story) => (
           <div
@@ -96,8 +55,7 @@ const TopBar = () => {
           viewBox="0 0 24 24"
           stroke="currentColor"
           className="h-6 w-6 cursor-pointer"
-        >
-        </svg>
+        ></svg>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -120,7 +78,7 @@ const TopBar = () => {
           {selectedStory && (
             <>
               <div className="flex justify-between items-center mb-2">
-                <div className="flex-shrink-0 h-8 w-8 rounded-full overflow-hidden">
+                <div className="flex-shrink-0 h-8 w-8 rounded-full overflow-hidden bg-red-400">
                   <img
                     src={selectedStory.imageUrl}
                     alt={selectedStory.username}
@@ -132,11 +90,24 @@ const TopBar = () => {
               <img
                 src={selectedStory.imageUrl}
                 alt={selectedStory.username}
-                className="w-full rounded-lg"
+                className="w-full h-52 rounded-lg"
               />
+              {selectedStory.questions.map((questionObj, index) => (
+                <div key={index} className="mt-4">
+                  <h3 className="text-xl font-semibold">
+                    {questionObj.question}
+                  </h3>
+                  <ul className="mt-2">
+                    {questionObj.answers.map((answer, ansIndex) => (
+                      <li key={ansIndex} className="list-disc ml-4">
+                        {answer}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </>
           )}
-          
         </div>
       </Modal>
     </div>
@@ -144,5 +115,3 @@ const TopBar = () => {
 };
 
 export default TopBar;
-
-

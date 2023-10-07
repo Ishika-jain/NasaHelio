@@ -1,34 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { leaderboardData } from "./Data";
 
 const Leaderboard = () => {
-  const leaderboardData = [
-    {
-      rank: 1,
-      user: "User 1",
-      score: 900,
-    },
-    {
-      rank: 2,
-      user: "User 2",
-      score: 800,
-    },
-    {
-      rank: 3,
-      user: "User 3",
-      score: 700,
-    },
-    {
-      rank: 4,
-      user: "User 4",
-      score: 700,
-    },
-  ];
+ 
 
   return (
     <div className="bg-bluebg rounded-lg shadow-lg px-4 h-full text-bluetxt">
       <div className="flex justify-center font-bold text-2xl p-2 ">
-        {" "}
-        Leaderboard{" "}
+        Leaderboard
       </div>
       <table className="w-full border-collapse">
         <thead>
