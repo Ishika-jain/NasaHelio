@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Landing from "./components/Landing/Landing";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Simulate from "./components/ScrollableMain.js/Simulate";
+import Kaggle from "./components/ScrollableMain.js/Kaggle";
+import MainSection from "./components/ScrollableMain.js/MainSection";
+import galaxy from "./assets/galaxy.jpg";
+import { sampleProjects, sampleNotifications } from './components/ScrollableMain.js/Data';
+import NotificationComponent from "./components/ScrollableMain.js/NotificationComponent";
 
-function App() {
+const App = () => {
+  const backgroundImageStyle = {
+    backgroundImage: `url(${galaxy})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={backgroundImageStyle}>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Landing />}>
+            <Route path="/main" element={<MainSection projects={sampleProjects} />} />
+            <Route path="/simulate" element={<Simulate />} />
+            <Route path="/kaggle" element={<Kaggle />} />
+            <Route path="/notification" element={<NotificationComponent notifications={sampleNotifications}  />} />
+          </Route>
+        </Routes>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
