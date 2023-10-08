@@ -63,15 +63,14 @@ const LeftSidebar = () => {
           </li>
 
           <li className="mb-8">
-            <a
-              href="https://spaceplace.nasa.gov/helios-game/en/"
+            <Link
+              to="/games"
               className="flex items-center text-bluetxt hover:text-white"
             >
               <SmartToyIcon className="w-6 h-6 mr-2" />
-              <span className="text-xl font-semibold">Games</span>
-            </a>
+              <span className="text-xl font-semibold">Game</span>
+            </Link>
           </li>
-
           <li className="mb-8">
             <a
               href="https://science.nasa.gov/heliophysics/"

@@ -2,13 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body{
-    background: #ffffff52;
-    background: rgba(255, 183, 195, 0.618);
-    background: rgba(255, 255, 0, 0.523);
-    background: rgba(195, 222, 255, 0.379);
-    background: rgb(16, 0, 72);
-    background: rgba(255, 255, 255, 0.847);
-    background: #860f0f;
-
+body {
+  background: rgba(195, 222, 255, 0.379);
 }

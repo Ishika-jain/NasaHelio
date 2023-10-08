@@ -3,7 +3,6 @@ import Modal from "@mui/material/Modal";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
 import { storiesData } from "./Data";
 
-
 const TopBar = () => {
   const [openModal, setOpenModal] = useState(false);
   const [selectedStory, setSelectedStory] = useState(null);
@@ -13,8 +12,12 @@ const TopBar = () => {
     setOpenModal(true);
   };
 
+  const handleButtonClick = (option) => {
+    console.log(`Clicked on ${option}`);
+  };
+
   const handleVr = () => {
-    setSelectedStory(1);
+    setSelectedStory(1); // Set the selected story to the appropriate one
     setOpenModal(true);
   };
 
@@ -27,7 +30,7 @@ const TopBar = () => {
     <div className="flex items-center justify-between h-32 overflow-x-hidden">
       <div
         key={1}
-        className=" w-32 rounded-full cursor-pointer text-center mx-4 mt-1 "
+        className="w-32 rounded-full cursor-pointer text-center mx-4 mt-1"
         onClick={() => handleVr()}
       >
         <ControlPointIcon sx={{ width: "60px", height: "60px" }} />
@@ -38,7 +41,7 @@ const TopBar = () => {
         {storiesData.map((story) => (
           <div
             key={story.id}
-            className="flex-shrink-0 h-16 w-16 rounded-full overflow-hidden cursor-pointer "
+            className="flex-shrink-0 h-16 w-16 rounded-full overflow-hidden cursor-pointer"
             onClick={() => handleStoryClick(story)}
           >
             <img
@@ -48,22 +51,6 @@ const TopBar = () => {
             />
           </div>
         ))}
-      </div>
-      <div className="flex items-center space-x-4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          className="h-6 w-6 cursor-pointer"
-        ></svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          className="h-6 w-6 cursor-pointer"
-        ></svg>
       </div>
 
       <Modal
@@ -75,11 +62,11 @@ const TopBar = () => {
           justifyContent: "center",
         }}
       >
-        <div className="bg-white p-4 rounded-lg w-full h-full max-w-lg">
+        <div className="bg-white p-4 rounded-lg w-full h-11/12 max-w-lg">
           {selectedStory && (
             <>
               <div className="flex justify-between items-center mb-2">
-                <div className="flex-shrink-0 h-8 w-8 rounded-full overflow-hidden bg-red-400">
+                <div className="flex-shrink-0 h-8 w-8 rounded-full overflow-hidden">
                   <img
                     src={selectedStory.imageUrl}
                     alt={selectedStory.username}
@@ -98,13 +85,15 @@ const TopBar = () => {
                   <h3 className="text-xl font-semibold">
                     {questionObj.question}
                   </h3>
-                  <ul className="mt-2">
-                    {questionObj.answers.map((answer, ansIndex) => (
-                      <li key={ansIndex} className="list-disc ml-4">
-                        {answer}
-                      </li>
-                    ))}
-                  </ul>
+                  {questionObj.answers.map((answer, ansIndex) => (
+                    <button
+                      key={ansIndex}
+                      className="bg-gray-400 p-2 m-4 text-white py-1 px-3 rounded mt-2"
+                      onClick={() => handleButtonClick(answer)}
+                    >
+                      {answer}
+                    </button>
+                  ))}
                 </div>
               ))}
             </>

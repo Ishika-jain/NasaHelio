@@ -15,9 +15,9 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="mx-auto rounded overflow-hidden shadow-xl m-4 max-w-xl bg-gray-300">
+    <div className="mx-auto rounded overflow-hidden shadow-xl m-4 w-1/2 bg-gray-300"> 
       <img
-        className="w-full max-h-32"
+        className="w-full h-52"
         src={image}
         alt={projectName}
         draggable="false"
@@ -36,17 +36,16 @@ const ProjectCard = ({ project }) => {
           onClick={openModal}
           className="inline-block bg-bluetxt w-1/2 hover:bg-white text-white hover:text-bluetxt text-sm font-semibold py-2 px-4 rounded-md text-center"
         >
-          View Project
+          View 
         </button>
-        <span className="inline-block bg-gray-400 w-1/2  text-bluetxttext-sm font-semibold py-2 px-4 rounded-md text-center">
+        <span className="inline-block bg-gray-400 w-1/2  text-bluetxt text-sm font-semibold py-2 px-4 rounded-md text-center">
           {author}
         </span>
-
         <button
           onClick={openModal}
           className="inline-block bg-bluetxt w-1/2 hover:bg-white text-white hover:text-bluetxt text-sm font-semibold py-2 px-4 rounded-md text-center"
         >
-          Contribute to Project
+          Contribute 
         </button>
       </div>
       {isModalOpen && <ProjectModal project={project} onClose={closeModal} />}

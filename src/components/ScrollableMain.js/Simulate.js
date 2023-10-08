@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import { questionsAndAnswers } from "./Data";
+import OutboundIcon from "@mui/icons-material/Outbound";
 
 Modal.setAppElement("#root");
 
@@ -16,8 +17,6 @@ const Simulate = () => {
   const [showResult, setShowResult] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false); // Store the quiz result
 
-
-
   const handleOpenModal = () => {
     if (checked1 && checked2) {
       // Open the modal or navigate to a different page within your React app
@@ -31,7 +30,6 @@ const Simulate = () => {
   const closeModal = () => {
     setModalIsOpen(false);
   };
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -114,6 +112,23 @@ const Simulate = () => {
         </div>
       </div>
 
+      <div className="mt-5">
+        <div className="text-center mb-4 font-bold text-bluetxt mr-4 ">
+         
+          <a href="https://www.blockadelabs.com/?_gl=1*3dilgp*_ga*MTM5MTc0NTQ5OS4xNjk2NzUzMzcz*_ga_YQXS5JLFDH*MTY5Njc1MzM3Mi4xLjEuMTY5Njc1NTkzOS4zNy4wLjA.">
+            <span className="bg-white p-1 rounded-sm ml-4">
+              Got Ideas? Make your own simulations  <OutboundIcon />
+            </span>
+          </a>
+        </div>
+        <iframe
+          title="myuni"
+          src="https://skybox.blockadelabs.com/e/9988083b5536581e5177c521e70be233"
+          width="642"
+          height="300"
+          allow="fullscreen"
+        ></iframe>
+      </div>
       <div>
         <div className="bg-bluebg p-4 mt-4 rounded shadow-md">
           <h2 className="text-lg font-semibold mb-2">Quiz</h2>

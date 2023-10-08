@@ -1,157 +1,155 @@
-// sampleData.js
-
 export const sampleProjects = [
   {
-    projectName: "Cloudspotting on Mars",
+    projectName: "Solar Jet Hunter",
     description:
-      "This is the description for Project 1. It is a sample project created for testing purposes.",
-    author: "John Doe",
+      "Solar System project that can be done by anyone, anywhere, with a cellphone or laptop.",
+    author: "Erik Ostlund",
     image:
-      "https://www.simplilearn.com/ice9/free_resources_article_thumb/What_Is_a_Project.jpg",
-    link: "https://www.zooniverse.org/projects/marek-slipski/cloudspotting-on-mars",
+      "https://smd-cms.nasa.gov/wp-content/uploads/2023/04/logo10-square.png",
+    link: "https://www.zooniverse.org/projects/sophiemu/solar-jet-hunter",
   },
   {
-    projectName: "Project 2",
+    projectName: "Aurorasaurus",
     description:
-      "This is the description for Project 2. It is another sample project with some unique features.",
-    author: "Jane Smith",
-    image:
-      "https://www.simplilearn.com/ice9/free_resources_article_thumb/What_Is_a_Project.jpg",
-    link: "https://example.com/project2",
-  },
-  {
-    projectName: "Project 3",
-    description:
-      "This is the description for Project 3. It showcases the capabilities of the application.",
+      "The making of an aurora is an intricate dance of particles and magnetism between the Sun and Earth. The Sun continuously produces a solar wind, made of charged particles (plasma) carrying the Sun’s magnetic field. As the solar wind nears Earth, it causes the magnetic field of the Earth to be drawn into a giant teardrop shape, squashed on the side closest to the sun and drawn out into a long tail on the side farthest from the sun.",
     author: "Bob Johnson",
     image:
-      "https://www.simplilearn.com/ice9/free_resources_article_thumb/What_Is_a_Project.jpg",
-    link: "https://example.com/project3",
+      "https://smd-cms.nasa.gov/wp-content/uploads/2023/04/aurora-jpg.webp",
+    link: "https://www.aurorasaurus.org/",
+  },
+{
+    projectName: "Solar Active Region Spotter",
+    description:
+      "Help track active regions as they evolve across solar rotations!",
+    author: "Emily Mason",
+    image: "https://gooseberry.blender.org/wp-content/uploads/2015/04/08___pointdensity_clouds3-1200x800.jpg",
+    link: "https://www.zooniverse.org/projects/eimason/solar-active-region-spotter",
   },
 ];
 
 export const sampleNotifications = [
   "Solar Flare on 3/2/24",
   "Sun Gazing Party on 5/2/24",
-  "NASA visit on 10/5/2023",
+  "NASA visit on 10/12/2023",
 ];
 
 export const storiesData = [
   {
     id: 1,
-    username: "user1",
-    imageUrl: "https://via.placeholder.com/40",
+    username: "Prof Dan Burry",
+    imageUrl: "https://gooseberry.blender.org/wp-content/uploads/2015/04/08___pointdensity_clouds3-1200x800.jpg",
     questions: [
       {
-        question: "Question 1",
-        answers: ["Answer 1", "Answer 2", "Answer 3"],
+        question: "What instruments are used to collect solar wind data?",
+        answers: ["Magnetometers", "Solar Wind Analyzers", "Spectrometers"],
       },
       {
-        question: "Question 2",
-        answers: ["Answer A", "Answer B"],
+        question: "How does the solar activity affect Earth's magnetosphere?",
+        answers: ["It can cause geomagnetic storms", "It influences space weather"],
       },
     ],
   },
 
   {
     id: 2,
-    username: "user2",
-    imageUrl: "https://via.placeholder.com/40",
+    username: "Prof Kareema",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/The_sun_in_many_wavelengths.jpg/1200px-The_sun_in_many_wavelengths.jpg",
     questions: [
       {
-        question: "Question X",
-        answers: ["Answer X1", "Answer X2"],
+        question: "What are coronal mass ejections (CMEs) and how are they monitored?",
+        answers: ["Explosive releases of solar plasma", "Monitored by coronagraphs"],
       },
     ],
   },
 
   {
     id: 3,
-    username: "user1",
-    imageUrl: "https://via.placeholder.com/40",
+    username: "Dr. Nandesh",
+    imageUrl: "https://www.nasa.gov/wp-content/uploads/2017/07/17-064.jpg",
     questions: [
       {
-        question: "Question 1",
-        answers: ["Answer 1", "Answer 2", "Answer 3"],
+        question: "How are solar flares classified, and why are they important for heliophysics?",
+        answers: ["Classified by X-ray intensity", "Provide insights into solar activity"],
       },
       {
-        question: "Question 2",
-        answers: ["Answer A", "Answer B"],
+        question: "What is the Parker Solar Probe, and what data is it collecting?",
+        answers: ["Closest approach to the Sun", "Collects solar wind data"],
       },
     ],
   },
 
   {
     id: 4,
-    username: "user1",
-    imageUrl: "https://via.placeholder.com/40",
+    username: "Lara Dutta",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREjwl-fl2I95o1VGwv1K7skhvSDaXnO16hhA&usqp=CAU",
     questions: [
       {
-        question: "Question 1",
-        answers: ["Answer 1", "Answer 2", "Answer 3"],
+        question: "What is the solar cycle, and how does it impact heliophysics research?",
+        answers: ["11-year cycle of solar activity", "Affects space weather predictions"],
       },
       {
-        question: "Question 2",
-        answers: ["Answer A", "Answer B"],
+        question: "How do solar observatories like SDO contribute to heliophysics?",
+        answers: ["Monitor the Sun's surface and atmosphere", "Provide valuable data"],
       },
     ],
   },
 
   {
     id: 5,
-    username: "user1",
-    imageUrl: "https://via.placeholder.com/40",
+    username: "Prof. Mary",
+    imageUrl: "https://www.health.com/thmb/OQ3_VsJHFaEYCAnWNz4MZTEwdSg=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/gettyimages-512816582-2000-2c7532dd6c8e478697eb44c26807d6dd.jpg",
     questions: [
       {
-        question: "Question 1",
-        answers: ["Answer 1", "Answer 2", "Answer 3"],
+        question: "What is the purpose of the Magnetospheric Multiscale (MMS) mission?",
+        answers: ["Study magnetic reconnection", "Advance our understanding of space plasma"],
       },
       {
-        question: "Question 2",
-        answers: ["Answer A", "Answer B"],
+        question: "How does the Van Allen Probes mission contribute to heliophysics research?",
+        answers: ["Explore Earth's radiation belts", "Collect radiation data"],
       },
     ],
   },
 ];
 
+
 export const trendingProjects = [
   {
-    name: "Project 1",
-    description: "Description for Project 1",
+    name: "Solar Jet Hunter",
+    description: "Solar System project that can be done by anyone, anywhere, with a cellphone or laptop.",
     tags: ["Tag1", "Tag2", "Tag3"],
     isRedText: false, 
 
   },
   {
-    name: "Project 2",
-    description: "Description for Project 2",
+    name: "Heliophysics Audified: Resonances in Plasmas",
+    description: "What is space actually made of? It's definitely not a perfect vacuum.",
     tags: ["Tag2", "Tag3", "Tag4"],
     isRedText: false, 
   },
   {
-    name: "Project 3",
-    description: "Description for Project 3",
+    name: "Solar Active Region Spotter",
+    description: "Help track active regions as they evolve across solar rotations!",
     tags: ["Tag1", "Tag3", "Tag5"],
     isRedText: true, 
 
   },
   {
-    name: "Project 4",
-    description: "Description for Project 3",
+    name: "Disk Detective",
+    description: "Spot the disks around nearby stars where planets form and dwell!",
     tags: ["Tag1", "Tag3", "Tag5"],
     isRedText: false, 
 
   },
   {
-    name: "Project 5",
-    description: "Description for Project 3",
+    name: "Sungrazer Project",
+    description: "Welcome to the Sungrazer citizen science Project comet program",
     tags: ["Tag1", "Tag3", "Tag5"],
     isRedText: true, 
 
   },
   {
-    name: "Project 6",
-    description: "Description for Project 3",
+    name: "Aurorasaurus",
+    description: "The making of an aurora is an intricate dance of particles and magnetism between the Sun and Earth.",
     tags: ["Tag1", "Tag3", "Tag5"],
     isRedText: false, 
 
@@ -161,23 +159,23 @@ export const trendingProjects = [
 export const leaderboardData = [
   {
     rank: 1,
-    user: "User 1",
-    score: 900,
+    user: "Vidya",
+    score: 932,
   },
   {
     rank: 2,
-    user: "User 2",
-    score: 800,
+    user: "Shawn",
+    score: 846,
   },
   {
     rank: 3,
-    user: "User 3",
-    score: 700,
+    user: "Anita",
+    score: 781,
   },
   {
     rank: 4,
-    user: "User 4",
-    score: 700,
+    user: "Dhara",
+    score: 706,
   },
 ];
 

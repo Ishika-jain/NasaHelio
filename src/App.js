@@ -7,6 +7,7 @@ import MainSection from "./components/ScrollableMain.js/MainSection";
 import galaxy from "./assets/galaxy.jpg";
 import { sampleProjects, sampleNotifications } from './components/ScrollableMain.js/Data';
 import NotificationComponent from "./components/ScrollableMain.js/NotificationComponent";
+import Game from "./components/ScrollableMain.js/Game";
 
 const App = () => {
   const backgroundImageStyle = {
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/simulate" element={<Simulate />} />
             <Route path="/kaggle" element={<Kaggle />} />
             <Route path="/notification" element={<NotificationComponent notifications={sampleNotifications}  />} />
+            <Route path="/games" element={<Game />} />
           </Route>
         </Routes>
       </Router>
