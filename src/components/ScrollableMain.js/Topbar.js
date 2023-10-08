@@ -27,10 +27,11 @@ const TopBar = () => {
     <div className="flex items-center justify-between h-32 overflow-x-hidden">
       <div
         key={1}
-        className="h-16 w-16 rounded-full cursor-pointer text-center mx-4 mt-1 "
+        className=" w-32 rounded-full cursor-pointer text-center mx-4 mt-1 "
         onClick={() => handleVr()}
       >
         <ControlPointIcon sx={{ width: "60px", height: "60px" }} />
+        <p className="font-semibold text-bluetxt">Get Avatar</p>
       </div>
 
       <div className="flex space-x-2 w-full justify-between">

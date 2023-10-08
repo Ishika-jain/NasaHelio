@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import img1 from "../../assets/nasa.jpg";
-import img2 from "../../assets/nasa2.png"
+import img2 from "../../assets/banner.png"
 import img3 from "../../assets/nasa3.png";
 
 const CarouselComponent = () => {

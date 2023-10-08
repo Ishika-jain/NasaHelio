@@ -2,13 +2,13 @@
 
 export const sampleProjects = [
   {
-    projectName: "Project 1",
+    projectName: "Cloudspotting on Mars",
     description:
       "This is the description for Project 1. It is a sample project created for testing purposes.",
     author: "John Doe",
     image:
       "https://www.simplilearn.com/ice9/free_resources_article_thumb/What_Is_a_Project.jpg",
-    link: "https://example.com/project1",
+    link: "https://www.zooniverse.org/projects/marek-slipski/cloudspotting-on-mars",
   },
   {
     projectName: "Project 2",
@@ -119,31 +119,42 @@ export const trendingProjects = [
     name: "Project 1",
     description: "Description for Project 1",
     tags: ["Tag1", "Tag2", "Tag3"],
+    isRedText: false, 
+
   },
   {
     name: "Project 2",
     description: "Description for Project 2",
     tags: ["Tag2", "Tag3", "Tag4"],
+    isRedText: false, 
   },
   {
     name: "Project 3",
     description: "Description for Project 3",
     tags: ["Tag1", "Tag3", "Tag5"],
+    isRedText: true, 
+
   },
   {
     name: "Project 4",
     description: "Description for Project 3",
     tags: ["Tag1", "Tag3", "Tag5"],
+    isRedText: false, 
+
   },
   {
     name: "Project 5",
     description: "Description for Project 3",
     tags: ["Tag1", "Tag3", "Tag5"],
+    isRedText: true, 
+
   },
   {
     name: "Project 6",
     description: "Description for Project 3",
     tags: ["Tag1", "Tag3", "Tag5"],
+    isRedText: false, 
+
   },
 ];
 

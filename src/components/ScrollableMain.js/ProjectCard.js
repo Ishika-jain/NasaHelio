@@ -46,7 +46,7 @@ const ProjectCard = ({ project }) => {
           onClick={openModal}
           className="inline-block bg-bluetxt w-1/2 hover:bg-white text-white hover:text-bluetxt text-sm font-semibold py-2 px-4 rounded-md text-center"
         >
-          Fund Project
+          Contribute to Project
         </button>
       </div>
       {isModalOpen && <ProjectModal project={project} onClose={closeModal} />}

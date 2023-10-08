@@ -19,7 +19,7 @@ const App = () => {
     <div style={backgroundImageStyle}>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Landing />}>
+          <Route path="/" element={<Landing />}>
             <Route path="/main" element={<MainSection projects={sampleProjects} />} />
             <Route path="/simulate" element={<Simulate />} />
             <Route path="/kaggle" element={<Kaggle />} />
