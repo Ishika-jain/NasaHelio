@@ -4,8 +4,7 @@ export const sampleProjects = [
     description:
       "Solar System project that can be done by anyone, anywhere, with a cellphone or laptop.",
     author: "Erik Ostlund",
-    image:
-      "https://smd-cms.nasa.gov/wp-content/uploads/2023/04/logo10-square.png",
+    image: "https://www.health.com/thmb/OQ3_VsJHFaEYCAnWNz4MZTEwdSg=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/gettyimages-512816582-2000-2c7532dd6c8e478697eb44c26807d6dd.jpg",
     link: "https://www.zooniverse.org/projects/sophiemu/solar-jet-hunter",
   },
   {
